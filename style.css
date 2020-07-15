@@ -103,6 +103,10 @@ body{
     display: block;
 }
 
+.dropdown-child a:hover{
+	color: #0099ff;
+}
+
 .nav__link{
 	display: inline-block;
     vertical-align: middle;
