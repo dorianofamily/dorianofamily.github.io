@@ -1,5 +1,6 @@
 html{
 	scroll-behavior: smooth;
+	background: #000;
 }
 
 body{
@@ -87,6 +88,7 @@ body{
 }
 .dropdown-child {
     display: none;
+	position: absolute;
     background-color: rgb(40, 44, 247);
 	border-radius: 5%;
 	opacity: 0.8;
