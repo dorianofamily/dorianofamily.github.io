@@ -78,10 +78,6 @@ body{
     cursor: pointer;
 }
 
-.youtube:hover{
-	background-color: red;
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
