@@ -24,7 +24,7 @@ body{
 
 @media only screen and (max-width: 426px){
 	body{
-		font-size: 40%;
+		font-size: 35%;
 	}
 }
 
@@ -79,15 +79,20 @@ body{
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+	text-align: center;
+	margin: auto;
+	width: 6.250em;
 }
+
 .dropdown-child {
+	position: absolute;
     display: none;
-    position: absolute;
     background-color: rgb(40, 44, 247);
 	border-radius: 5%;
 	opacity: 0.8;
+	max-height: 0;
+	transition: max-height 0.7s ease-in; 
+	box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2);
 }
 .dropdown-child a {
     color: white;
@@ -96,7 +101,8 @@ body{
     display: block;
 }
 .dropdown:hover .dropdown-child {
-    display: block;
+	display: block;
+	max-height: 12.500em;
 }
 
 .dropdown-child a:hover{
@@ -108,10 +114,8 @@ body{
     vertical-align: middle;
     margin: 0 0.938em;
     position: relative;
-
     color: yellow;
     text-decoration: none;
-
     transition: color 0.2s linear;
 }
 
@@ -120,10 +124,8 @@ body{
     display: block;
     width: 100%;
     height: 0.094em;
-
     background-color: #0099ff;
     opacity: 0;
-
     position: absolute;
     top: 100%;
     left: 0;
@@ -234,6 +236,54 @@ body{
 	border-radius: 10%;
 	opacity: 0.8;
 }
+
+.dropdown2 {
+	display: block;
+	text-align: center;
+	margin: auto;
+	width: 50%;
+}
+
+.fd__btn{
+	border: none;
+	color: white;
+	padding: 0.313em 1.250em;
+	text-decoration: none;
+	font-family: 'Spectral', serif;
+	font-size: 1.188em;
+	margin: 0.250em 0.125em;
+	opacity: 0.9;
+	cursor: pointer;
+	background-color: rgb(54, 57, 248);
+	box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2)
+}
+
+.dropdown-child2 {
+	position: relative;
+	line-height: 0.938em;
+	display: none;
+    background-color: rgb(73, 73, 255);
+	border-radius: 5%;
+	opacity: 0.9;
+	box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2)
+}
+
+.dropdown-child2 a {
+	color: white;
+	font-family: 'Spectral', serif;
+	font-size: 1em;
+    padding: 0.625em;
+    text-decoration: none;
+    display: block;
+}
+.dropdown2:hover .dropdown-child2 {
+	display: block;
+}
+
+.dropdown-child2 a:hover{
+	color: #0099ff;
+}
+
 .oneFourth2{
 	width: 24%;
 	float: left;
